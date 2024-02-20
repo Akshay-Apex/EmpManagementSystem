@@ -1,0 +1,87 @@
+body {
+  margin: 0px; 
+}
+
+#header {
+  text-align: center;
+  background-color: black;
+  color: rgb(131, 195, 36);
+  padding: 20px;  
+  margin-top: 0px;
+  font-weight: bolder;
+}
+
+.required_prompt {
+  color: red;   
+  margin-bottom: 5px; 
+  margin-top: 5px;    
+}
+
+#hr {
+  border-width: 10px;  
+}
+
+/* For Buttons */
+#refresh {
+  margin-left: 15px;
+  margin-top: 10px;  
+  display: inline-block;    
+}
+
+#save {
+  margin-top: 20px;
+}
+
+#retrieve, #deleteAll {
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+#yes {
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+#no {
+  margin-left: 20px;
+  margin-top: 15px;
+  background-color: rgb(225, 48, 48);
+}
+
+#update {
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+#delete {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+/*---------------------------*/
+#form {
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+
+input, textarea {
+  width: 250px;  
+}
+
+label, textarea, input {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+p {
+  font-weight: bolder;
+}
+
+#display, #save_display {
+  margin-top: 15px;
+}
+
