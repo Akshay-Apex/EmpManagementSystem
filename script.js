@@ -87,6 +87,7 @@ function setArray() {
   } else {    
     document.getElementById("save_display").innerText = "Saved successfully!";    
   }
+  emp_num.disabled = false;
 }
 
 
