@@ -147,9 +147,12 @@ function getArray() {
 
 //Deletes the stored data 
 function delArray() {
+  let display = document.getElementById("display");
+  display.style.textAlign = "center";
+  display.style.color = "green";
   let delArray = document.getElementById("retrieve");
   sessionStorage.removeItem(delArray.value);
-  document.getElementById("display").innerText = "Successfully removed!";
+  display.innerHTML = "Successfully removed!"; 
 }
 
 
@@ -157,19 +160,17 @@ function delArray() {
 //Deletes all the data from the session storage 
 function delAllArray(btn_state = null) {  
   let display = document.getElementById("display");
-  display.innerHTML = 'All the data will be deleted permanently! <br>' + 
-  '<button id="yes" onclick="delAllArray(true)" class="btn btn-success">Yes</button>' + 
-  '<button id="no" onclick="delAllArray(false)" class="btn btn-success">No</button>';    
   display.style.color = "red";   
   display.style.textAlign = "center";
   display.style.marginLeft = "0px";
+  display.innerHTML = 'All the data will be deleted permanently! <br>' + 
+  '<button id="yes" onclick="delAllArray(true)" class="btn btn-success">Yes</button>' + 
+  '<button id="no" onclick="delAllArray(false)" class="btn btn-success">No</button>';    
   if (btn_state === true) {
     sessionStorage.clear();
-    document.getElementById("display").innerText = "All the data have been successflly deleted!"
-    display.style.color = "black";   
+    document.getElementById("display").innerHTML = "<span style='color: green'> All the data have been successflly deleted! </span>";    
   } else if (btn_state === false) {
-    document.getElementById("display").innerText = "Delete All cancelled!";
-    display.style.color = "black";   
+    document.getElementById("display").innerText = "Delete All cancelled!";    
   }  
 }
 
