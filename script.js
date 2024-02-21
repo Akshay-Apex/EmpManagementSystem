@@ -71,14 +71,8 @@ function setArray() {
     return;
   }
 
-  let emp_num = document.getElementById("emp_num");
-  let retrieve = document.getElementById("retrieve")
-  if (emp_num.value !== retrieve.value) {
-    sessionStorage.setItem(emp_num.value, JSON.stringify(setArray));
-    sessionStorage.removeItem(retrieve.value);
-  } else {    
-    sessionStorage.setItem(emp_num.value, JSON.stringify(setArray));
-  }
+  let emp_num = document.getElementById("emp_num");  
+  sessionStorage.setItem(emp_num.value, JSON.stringify(setArray));  
 
   if (sessionStorage.getItem("0") === "update") {    
     document.getElementById("save_display").innerText = "Updated successfully!";  
